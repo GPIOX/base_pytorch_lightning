@@ -63,7 +63,7 @@ train_dataset = dict(
         download=True,
         train=True,
         noise_type='pairflip',
-        noise_rate=0.2,
+        noise_rate=0.6,
     ),
     dataloader_arg=dict(
         batch_size=128,

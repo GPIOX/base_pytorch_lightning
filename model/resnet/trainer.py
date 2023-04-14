@@ -60,7 +60,7 @@ class ResNetTrainer(pl.LightningModule):
         loss = loss.mean()
 
         pred = pred.argmax(dim=1)
-        acc = (pred == label).float().sum()
+        acc = (pred == label).float().sum().mean()
 
         return loss, acc
 
